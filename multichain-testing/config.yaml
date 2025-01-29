@@ -32,8 +32,8 @@ chains:
     resources:
       cpu: 1
       memory: 4Gi
-  - id: osmosislocal
-    name: osmosis
+  - id: elyslocal
+    name: elys
     numValidators: 1
     genesis:
       app_state:
@@ -89,18 +89,18 @@ chains:
       memory: 1Gi
 
 relayers:
-  - name: osmosis-cosmoshub
+  - name: elys-cosmoshub
     type: hermes
     replicas: 1
     chains:
-      - osmosislocal
+      - elyslocal
       - cosmoshublocal
-  - name: agoric-osmosis
+  - name: agoric-elys
     type: hermes
     replicas: 1
     chains:
       - agoriclocal
-      - osmosislocal
+      - elyslocal
   - name: agoric-cosmoshub
     type: hermes
     replicas: 1

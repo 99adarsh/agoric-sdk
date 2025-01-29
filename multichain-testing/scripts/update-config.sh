@@ -2,8 +2,8 @@
 
 ## see https://github.com/cosmology-tech/starship/blob/1d60f55c631b4d0f92a43ad92e9a935298aa3aa5/starship/charts/devnet/scripts/default/update-config.sh
 
-CHAIN_ID="${CHAIN_ID:=osmosis}"
-CHAIN_DIR="${CHAIN_DIR:=$HOME/.osmosisd}"
+CHAIN_ID="${CHAIN_ID:=elys}"
+CHAIN_DIR="${CHAIN_DIR:=$HOME/.elysd}"
 KEYS_CONFIG="${KEYS_CONFIG:=configs/keys.json}"
 
 set -eux
